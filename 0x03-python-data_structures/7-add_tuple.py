@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 def add_tuplet(tuplet_a=(), tuple_b=()):
     new_tuple = ()
     tuple_1 = tuple_a + (0, 0)
