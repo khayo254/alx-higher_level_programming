@@ -45,4 +45,18 @@ class Rectangle:
         """Calculate the perimeter of the rectangle."""
         if self.width == 0 or self.height == 0:
             return 0
-        return (self.width + self.height) * 2
+            return (self.width + self.height) * 2
+
+    def __str__(self):
+        """Print the rectangle."""
+        if self.width == 0 or self.height == 0:
+            return ""
+        return ((("#" * self.width) + "\n") * self.height)[:-1]
+
+    def __repr__(self):
+        """Print the rectangle using eval."""
+        return "Rectangle({}, {})".format(self.width, self.height)
+
+    def __del__(self):
+        """Print a message when the rectangle is deleted."""
+        print("Bye rectangle...")
