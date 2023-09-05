@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-class Rectangle():
+class Rectangle:
     pass
-myrectangle = Rectangle()
-print(type(myrectangle))
-print(myrectangle.__dict__)
+my_rectangle = Rectangle()
+print(type(my_rectangle))
+print(my_rectangle.__dict__)
